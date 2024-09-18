@@ -64,7 +64,13 @@ const StudentSignup = () => {
 
             <div className="form-group">
               <label htmlFor="year">Year</label>
-              <Field name="year" type="text" className="input-field" />
+              <Field as="select" name="year" className="input-field">
+                <option value="">Select your year</option>
+                <option value="1st">1st Year</option>
+                <option value="2nd">2nd Year</option>
+                <option value="3rd">3rd Year</option>
+                <option value="4th">4th Year</option>
+              </Field>
               <ErrorMessage name="year" component="div" className="error-message" />
             </div>
 
